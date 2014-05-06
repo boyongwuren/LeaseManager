@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mmmm</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="roomNum">房号</string>
+    <string name="userName">姓名</string>
+    <string name="antecedent">押金</string>
+    <string name="phoneNum">电话</string>
+    <string name="rentNum">租金</string>
+    <string name="netMoney">网费</string>
+    <string name="property">物业</string>
+    <string name="notes">备注</string>
+    <string name="enterTime">入住时间</string>
+    <string name="waterDian">水电</string>
+    <string name="comitBtnName">提         交</string>
+    <string name="backBtnName">返         回</string>
+    <string name="editorBtnName">编         辑</string>
+    <string name="addOneWaterPowerName">+</string>
+    <string name="water">水(吨)</string>
+    <string name="power">电(度)</string>
+    <string name="mouth">月份</string>
+    <string name="mouth1">1</string>
+    <string name="mouth2">2</string>
+    <string name="mouth3">3</string>
+    <string name="mouth4">4</string>
+    <string name="mouth5">5</string>
+    <string name="mouth6">6</string>
+    <string name="mouth7">7</string>
+    <string name="mouth8">8</string>
+    <string name="mouth9">9</string>
+    <string name="mouth10">10</string>
+    <string name="mouth11">11</string>
+    <string name="mouth12">12</string>
+    <string name="addWaterPowerTitle">添加水电</string>
+    <string name="caculateInfo">结算明细</string>
+    <string name="baseFormula">基础公式:租金+网费+物业</string>
+    <string name="changeFormula">水电公式:水*4+用电量*0.8</string>
+    <string name="frontWater">本月水量*上月水量</string>
+    <string name="frontPower">本月电量*上月电量</string>
+
+</resources>

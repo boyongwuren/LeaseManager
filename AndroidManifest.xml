@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leasemanagerc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:name="com.bywr.lease.application.LeaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bywr.lease.activity.ShowUserInfoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+            <intent-filter >
+                <action android:name="com.bywr.lease.manager"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bywr.lease.activity.ShowWaterPowerActivity"
+             >
+        </activity>
+        <activity
+            android:name="com.bywr.lease.activity.CacuateInfoActivity"
+             >
+        </activity>
+
+       <activity  android:name="com.bywr.lease.activity.TestActivity" >
+            <intent-filter >
+                <action android:name="com.bywr.lease.manager"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity> 
+        
+        <receiver android:name="com.bywr.lease.broadcasetReceiver.AlarmBroadcaseReceiver">
+            <intent-filter>
+                <action android:name="android.com.bywr.lease.alarmDemo.action"></action>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.bywr.lease.broadcasetReceiver.BootBroadcaseReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.bywr.lease.activity.MyAppWidgetProvide" >
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovide">
+                
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.bywr.lease.activity.MyService">
+            
+        </service>
+        
+    </application>
+
+</manifest>

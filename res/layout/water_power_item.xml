@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <EditText 
+        android:id="@+id/month" 
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="time"
+        android:text="@string/mouth"
+        />
+
+    <EditText 
+        android:id="@+id/waterNum" 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/water"
+        android:inputType="number"
+        />
+
+    <EditText 
+        android:id="@+id/powerNum" 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/power"
+        android:inputType="number"
+        />
+    
+
+</LinearLayout>
